@@ -57,8 +57,9 @@ else:
 
 if os.environ.get("ALLOWED_HOSTS") is not None:
     ALLOWED_HOSTS = loads(os.environ.get("ALLOWED_HOSTS"))
+    ALLOWED_HOSTS = ["*"]
 else:
-    ALLOWED_HOSTS = []
+    ALLOWED_HOSTS = ["*"]
 
 DATA_UPLOAD_MAX_NUMBER_FIELDS = None
 
